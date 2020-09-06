@@ -1,0 +1,11 @@
+language: node_js
+
+node_js:
+  - "12.6.0"
+
+script:
+    - node src/App.js
+deploy:
+  provider: heroku
+  api_key: f6557a57-fb28-47e7-9b22-073576c88992
+  app: ense701react
