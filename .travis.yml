@@ -12,5 +12,3 @@ deploy:
   provider: heroku
   api_key: f6557a57-fb28-47e7-9b22-073576c88992
   app: ense701react
-
-  //More
