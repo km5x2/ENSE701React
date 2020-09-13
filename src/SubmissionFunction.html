@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/SubimissionStyle.css">
+    <title>Subimission</title>
+</head>
+
+
+<body>
+
+    <h1>Forms</h1>
+    <div class="container">
+    <form>
+        <div class="row">
+            <div class="col-25">
+                <label for="firstName">First Name:</label>
+            </div>
+            <div class="col-75">
+                 <input type="text" id="firstName" name="firstName" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lastName">Last Name:</label>
+            </div>
+            <div class="col-75">
+                   <input type="text" id="lastName" name="lastName" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="gender">Gender:</label>
+            </div>  
+            <div class="col-75">
+                 <form action="">
+                    <input type="radio" name="gender" value="male">Male&nbsp;
+                    <input type="radio" name="gender" value="female">Female
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="email">Email Address:</label>
+            </div>
+            <div class="col-75">
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="title">Title:</label>
+            </div>
+            <div class="col-75">
+                <input type="title" id="title" name="title">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="detail">Now write down details or upload file</label>
+            </div>
+            <div class="col-75">
+                <textarea name="detail" id="detail" cols="60" rows="10" placeholder="About your article..."></textarea>
+            </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="myfile">Select file:</label>
+            </div>
+            <div class="col-75">
+                <input type="file" id="myfile" name="myfile">
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="submit">
+        </div>
+    </form>
+
+    </div>
+</body>
+</html>
