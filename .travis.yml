@@ -7,7 +7,9 @@ cache:
     - node_modules
 script:
   - npm test
+  - CI=false
   - npm run build
+
 deploy:
   provider: heroku
   api_key: f6557a57-fb28-47e7-9b22-073576c88992
