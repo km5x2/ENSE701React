@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Professional searching Bar </title>
+<link rel = "stylesheet" href="css/Style.css"/>
+<script type = "text/javascript">
+    function active(){
+        var searchBar = document.getElementById('searchBar');
+        if(searchBar.value == 'Search...'){
+            searchBar.value = ''
+            searchBar.placeholder = 'Search...'
+        }
+    }
+    function inactive(){
+        var searchBar = document.getElementById('searchBar');
+        if(searchBar.value == ''){
+            searchBar.value = 'Search...'
+            searchBar.placeholder = ''
+        }
+</script>
+</head>
+
+
+<body>
+<center><img src="seer.png"width="20%"></center>
+<br><br><br>
+<center><form action="search.php" method="post">
+    <input type="text" id="searchBar" placeholder="Search..." maxlength="25" autocomplete="on" onMouseDown="active();" onBlur="inactive();"/><input type="submit" id = "searchBtn" value = "GO!" />
+</form></center>
+<center><a href="SubmissionFunction.html">Submit a Record</a></center>
+</body>
+
+</html>
