@@ -2,6 +2,12 @@ import React from 'react';
 import './App.css';
 import './css/Style.css'
 import firebase from 'firebase';
+import ScriptTag from 'react-script-tag';
+
+const Email = props => (
+    <ScriptTag type="text/javascript" src="https://smtpjs.com/v3/smtp.js" />
+    )
+
 var firebaseConfig = {
     apiKey: "AIzaSyCBoqiIA03lk46M-OeD1rT4Z_kF3wwYadY",
     authDomain: "ense701.firebaseapp.com",
@@ -15,7 +21,7 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
-
+  
   function pushSubmission(){
       var num = Math.random();  
     var fname = document.getElementById('firstName').value;
@@ -34,6 +40,20 @@ var firebaseConfig = {
     })
     .then(function() {
         console.log("Document successfully written!");
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "ense701@gmail.com",
+            Password : "Linux4ever3597.",
+            To : email,
+            From : "ense701@gmail.com",
+            Subject : "Submission Report",
+            Body : "Hey,\nWe have received your submission\nThanks,\nENSE701 Team 29"
+        }).then(
+          message => alert(message)
+        );
+   
+      
+
     })
     .catch(function(error) {
         console.error("Error writing document: ", error);
