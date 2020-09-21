@@ -12,6 +12,8 @@ function Nav(){
                 </Link>
                 <Link to="/SubmitRecord">
                 <li >Submit Record</li></Link>
+                <Link to="/LoginPage">
+                <li >Login</li></Link>
                 
             </ul>
         </nav>
