@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Nav from './Nav'
+import Nav from './Navigation'
 import LoginPage from './LoginPage'
 import './css/Style.css'
 import SubmitRecord from './SubmitRecord';
