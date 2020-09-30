@@ -21,6 +21,7 @@ function App() {
   <Route path="/SearchRecord" component={SearchRecord}/>
   <Route path="/LoginPage" component={LoginPage}/>
    <Route path="/SubmitRecord" component={SubmitRecord}/>
+   
    </Switch>
 </div>
 </Router>
