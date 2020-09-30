@@ -6,12 +6,14 @@ import './css/Style.css'
 import SubmitRecord from './SubmitRecord';
 import SearchRecord from './SearchRecord';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import AutoCompleteText from './AutoCompleteText';
 
 function App() {
   
   return (
     <Router>
     <div className="App">
+    <AutoCompleteText/>
 
    <Nav/>
   <Switch>
