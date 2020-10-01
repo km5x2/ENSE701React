@@ -6,6 +6,7 @@ import './css/Style.css'
 import SubmitRecord from './SubmitRecord';
 import SearchRecord from './SearchRecord';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import RegisterPage from './RegisterPage';
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
   <Route path="/SearchRecord" component={SearchRecord}/>
   <Route path="/LoginPage" component={LoginPage}/>
    <Route path="/SubmitRecord" component={SubmitRecord}/>
+   <Route path = "/RegisterPage" component={RegisterPage}/>
    </Switch>
 </div>
 </Router>
