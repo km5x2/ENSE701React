@@ -28,7 +28,7 @@ export default function LoginPage() {
       </FormGroup>
     </Form>
     <br></br>
-    <a href="">New User? Click here to Sign Up.</a>
+    <a href="../RegisterPage" onclick = "RegisterPage()" >New User? Click here to Sign Up.</a>
     <br></br>
     <br></br><Button>Login</Button>
     </Col>
