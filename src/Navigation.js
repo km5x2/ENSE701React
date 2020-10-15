@@ -5,8 +5,6 @@ import { Nav, NavItem, NavLink } from "shards-react";
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
-
-
 let firebaseConfig = {
   apiKey: "AIzaSyCBoqiIA03lk46M-OeD1rT4Z_kF3wwYadY",
   authDomain: "ense701.firebaseapp.com",
