@@ -73,3 +73,15 @@
     clear: both;
   }
 
+  .review-list {
+    text-align: left;
+  }
+
+  .review-list-item{
+    padding: 10px;
+    border-bottom:1px solid lightgray;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
