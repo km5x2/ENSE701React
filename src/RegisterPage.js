@@ -2,7 +2,24 @@ import React from "react";
 import { Form, FormInput, FormGroup } from "shards-react";
 import { Container, Row, Col } from "shards-react";
 import { Button } from "shards-react";
+var firebase = require("firebase/app");
 
+// Add the Firebase products that you want to use
+require("firebase/auth");
+require("firebase/firestore");
+function RegisterUser(event){
+  event.preventDefault();
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("#password").value;
+  firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log(errorMessage);
+    // ...
+  });
+ 
+}
 export default function RegisterPage() {
     
     return (
@@ -34,10 +51,10 @@ export default function RegisterPage() {
     
     <br></br>
     <br></br>
-    <Button>Register</Button> 
+    <Button onClick={RegisterUser}>Register</Button> 
     <br></br>
     <br></br>
-    <a href="../Loginpage" onclik = "Loginpage()" >Already have a account? click here to login.</a>
+    <a href="../Loginpage" onClick = "Loginpage()" >Already have a account? click here to login.</a>
     </Col>
     </Row>
     </Container>

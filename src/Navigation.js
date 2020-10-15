@@ -50,7 +50,13 @@ function Navigation(){
                 Login</Link>
                 </NavLink>
       </NavItem>
-            
+      
+      <NavItem>
+      <NavLink active href="#">
+        <Link to="/RegisterPage">
+                Register</Link>
+                </NavLink>
+      </NavItem>
         </Nav>
     );
 }
