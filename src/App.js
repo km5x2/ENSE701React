@@ -8,6 +8,7 @@ import SearchRecord from './SearchRecord';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import RegisterPage from './RegisterPage';
 import ReviewPage from './ReviewPage';
+import AutoCompleteText from './AutoCompleteText'
 
 
 
