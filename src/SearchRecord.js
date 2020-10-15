@@ -28,11 +28,3 @@ function SearchRecord() {
 }
 
 export default SearchRecord;
-
-
-
-
-
-
-
-
