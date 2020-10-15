@@ -30,6 +30,7 @@ var firebaseConfig = {
     var details = document.getElementById('detail').value;
     var title = document.getElementById('title').value;
     var gender = document.querySelector('input[name="gender"]:checked').value;
+    console.log(email)
     db.collection("Submissions").doc(title).set({
         fname: fname,
         lname: lname,
@@ -38,19 +39,10 @@ var firebaseConfig = {
         title: title,
         gender: gender
     })
+    
     .then(function() {
         console.log("Document successfully written!");
-        Email.send({
-            Host : "smtp.gmail.com",
-            Username : "ense701@gmail.com",
-            Password : "Linux4ever3597.",
-            To : email,
-            From : "ense701@gmail.com",
-            Subject : "Submission Report",
-            Body : "Hey,\nWe have received your submission\nThanks,\nENSE701 Team 29"
-        }).then(
-          message => alert(message)
-        );
+        
    
       
 
@@ -58,6 +50,7 @@ var firebaseConfig = {
     .catch(function(error) {
         console.error("Error writing document: ", error);
     });
+ 
    
 };
 function SubmitRecord() {
