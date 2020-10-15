@@ -35,7 +35,6 @@ function fetchdata(event){
   submitlist =document.querySelector('#submite-list').innerHTML = '';
   var str = document.getElementById("searchBar").value;
   console.log(str);
-  console.log("WORKS");
   db.collection('Submissions').where("title","==", str).get().then((snapshot) => {
     snapshot.docs.forEach(doc => {
         console.log(doc.data());
