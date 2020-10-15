@@ -6,14 +6,13 @@ import './css/Style.css'
 import SubmitRecord from './SubmitRecord';
 import SearchRecord from './SearchRecord';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import AutoCompleteText from './AutoCompleteText';
+import RegisterPage from './RegisterPage';
 
 function App() {
   
   return (
     <Router>
     <div className="App">
-    <AutoCompleteText/>
 
    <Nav/>
   <Switch>
@@ -21,7 +20,7 @@ function App() {
   <Route path="/SearchRecord" component={SearchRecord}/>
   <Route path="/LoginPage" component={LoginPage}/>
    <Route path="/SubmitRecord" component={SubmitRecord}/>
-   
+   <Route path = "/RegisterPage" component={RegisterPage}/>
    </Switch>
 </div>
 </Router>
