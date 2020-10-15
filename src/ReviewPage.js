@@ -39,10 +39,7 @@ function fetchdata(event){
             renderSubmission(doc.data());
         })
     })
-}
-
-
-
+} 
 
 export default function ReviewPage() {
     
